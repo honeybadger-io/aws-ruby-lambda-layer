@@ -1,20 +1,13 @@
-source 'http://rubygems.org'
+source "http://rubygems.org"
 
-gem 'json'
-gem 'rack'
-gem 'rack-contrib'
-gem 'rake'
-gem 'pg'
-gem 'sequel'
-gem 'activerecord'
-gem 'dotenv'
-gem 'httparty'
-gem 'sidekiq'
-gem 'redis'
-gem 'sentry-raven'
+gem "activerecord"
+gem "faraday"
+gem "honeybadger"
+gem "pg"
+gem "redis"
+gem "rest-client"
 
 # aws
-gem 'aws-sdk-firehose'
-gem 'aws-sdk-lambda'
-gem 'aws-sdk-s3'
-gem 'aws-sdk-sqs'
+gem "aws-sdk-lambda"
+gem "aws-sdk-s3"
+gem "aws-sdk-ssm"
