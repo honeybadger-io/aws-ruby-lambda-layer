@@ -4,6 +4,8 @@ set -e
 
 rm -rf layer && mkdir -p layer/lib && mkdir -p layer/ruby/gems
 
+bundle install # to update Gemfile.lock after adding gems to the Gemfile
+
 docker build -t ruby25-pg-builder -f Dockerfile .
 
 CONTAINER=$(docker run -d ruby25-pg-builder false)
