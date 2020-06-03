@@ -1,6 +1,8 @@
 source "http://rubygems.org"
 
 gem "activerecord"
+gem "activesupport"
+gem "facets"
 gem "faraday"
 gem "honeybadger"
 gem "pg"

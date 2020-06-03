@@ -40,6 +40,7 @@ GEM
     concurrent-ruby (1.1.6)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    facets (3.1.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     honeybadger (4.6.0)
@@ -75,10 +76,12 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  activesupport
   aws-sdk-dynamodb
   aws-sdk-lambda
   aws-sdk-s3
   aws-sdk-ssm
+  facets
   faraday
   honeybadger
   pg
